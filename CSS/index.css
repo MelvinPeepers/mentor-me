@@ -365,9 +365,14 @@ CTA
 /*
   footer
 */
+
+footer {
+  background-color: var(--second-bg-color);
+  width: 100%;
+  height: 100%;
+}
 footer p {
   text-align: center;
-  background-color: var(--second-bg-color);
   color: var(--font-color);
 }
 footer p a {
@@ -385,6 +390,19 @@ footer p a:hover {
 Media Queries
 
 */
+
+@media (min-width: 2000px) {
+  .container-cards {
+    width: 70%;
+  }
+}
+
+@media (min-width: 2560px) {
+  .container-cards {
+    width: 60%;
+  }
+}
+
 @media (max-width: 1600px) {
   .contact p {
     padding-top: 15px;
@@ -428,6 +446,16 @@ Media Queries
   }
   .container-cards {
     width: 99%;
+  }
+}
+
+@media (min-width: 1366px) {
+  #footer {
+    position: fixed;
+    padding: 40px 10px 0px 10px;
+    bottom: 0;
+    width: 100%;
+    height: 120px;
   }
 }
 
