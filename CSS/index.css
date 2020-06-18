@@ -294,6 +294,10 @@ CTA
   color: var(--font-color);
   font-weight: bold;
 }
+
+.cta .cta-btn {
+  margin: 30px auto 0;
+}
 .cta .cta-btn:hover {
   background-color: var(--link-color);
   color: var(--second-bg-color);
@@ -438,9 +442,6 @@ Media Queries
   .main-navigation {
     max-width: 1024px;
   }
-  .container {
-    margin-top: 100px;
-  }
 
   .navbar {
     display: flex;
@@ -488,13 +489,12 @@ Media Queries
   .mission .contact {
     display: flex;
     justify-content: flex-end;
-    margin-top: 60px;
+    margin-top: 30px;
   }
   .cta .top-section {
     display: flex;
     justify-content: center;
     flex-flow: column;
-    align-items: center;
     width: 48%;
   }
 
@@ -591,8 +591,10 @@ Media Queries
   }
   .cta .cta-btn {
     width: 300px;
-
     font-size: 2rem;
+  }
+  h3 {
+    margin: 40px auto 20px;
   }
 }
 
@@ -617,6 +619,17 @@ Media Queries
 @media (max-width: 430px) {
   .main-navigation h1 {
     font-size: 4rem;
+  }
+  .container-cards {
+    width: 100%;
+  }
+  .row {
+    width: 100%;
+  }
+  .column .cards img {
+    display: block;
+    width: 96%;
+    margin: 0 auto;
   }
 }
 
