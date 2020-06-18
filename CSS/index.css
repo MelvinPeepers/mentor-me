@@ -391,86 +391,7 @@ Media Queries
 
 */
 
-@media (min-width: 2000px) {
-  .container-cards {
-    width: 70%;
-  }
-}
-
-@media (min-width: 2560px) {
-  .container-cards {
-    width: 60%;
-  }
-}
-
-@media (max-width: 1600px) {
-  .contact p {
-    padding-top: 15px;
-  }
-  #social-icons-hp {
-    margin-top: 0;
-    padding: 0;
-  }
-  .social-icons-hp a {
-    width: 0;
-    height: 100%;
-  }
-  .contact img {
-    margin-top: 0;
-  }
-  .container-cards {
-    width: 98%;
-  }
-  .row {
-    width: 100%;
-  }
-  .card3 .text-dog {
-    font-size: 1.6rem;
-  }
-}
-
-@media (max-width: 1400px) {
-  .contact p {
-    padding-top: 15px;
-  }
-  #social-icons-hp {
-    margin-top: 0;
-    padding: 0;
-  }
-  .social-icons-hp a {
-    width: 0;
-    height: 100%;
-  }
-  .contact img {
-    margin-top: 0;
-  }
-  .container-cards {
-    width: 99%;
-  }
-}
-
-@media (min-width: 1366px) {
-  #footer {
-    position: fixed;
-    padding: 40px 10px 0px 10px;
-    bottom: 0;
-    width: 100%;
-    height: 120px;
-  }
-}
-
-@media (max-width: 1365px) {
-  .row {
-    flex-direction: column;
-    align-items: center;
-  }
-}
-
 @media (min-width: 1024px) {
-  .main-navigation {
-    max-width: 1024px;
-  }
-
   .navbar {
     display: flex;
     justify-content: space-between;
@@ -559,6 +480,90 @@ Media Queries
   }
   .contact {
     margin-bottom: 20px;
+  }
+}
+
+@media (min-width: 1366px) {
+  #footer {
+    position: fixed;
+    padding: 40px 10px 0px 10px;
+    bottom: 0;
+    width: 100%;
+    height: 120px;
+  }
+}
+
+@media (min-width: 1700px) {
+  .nav-flex {
+    width: 80%;
+  }
+  .navbar {
+    margin-right: 100px;
+  }
+}
+
+@media (min-width: 2000px) {
+  .container-cards {
+    width: 70%;
+  }
+}
+
+@media (min-width: 2560px) {
+  .container-cards {
+    width: 60%;
+  }
+}
+
+@media (max-width: 1600px) {
+  .contact p {
+    padding-top: 15px;
+  }
+  #social-icons-hp {
+    margin-top: 0;
+    padding: 0;
+  }
+  .social-icons-hp a {
+    width: 0;
+    height: 100%;
+  }
+  .contact img {
+    margin-top: 0;
+  }
+  .container-cards {
+    width: 98%;
+  }
+  .row {
+    width: 100%;
+  }
+  .card3 .text-dog {
+    font-size: 1.6rem;
+  }
+}
+
+@media (max-width: 1400px) {
+  .contact p {
+    padding-top: 15px;
+  }
+  #social-icons-hp {
+    margin-top: 0;
+    padding: 0;
+  }
+  .social-icons-hp a {
+    width: 0;
+    height: 100%;
+  }
+  .contact img {
+    margin-top: 0;
+  }
+  .container-cards {
+    width: 99%;
+  }
+}
+
+@media (max-width: 1365px) {
+  .row {
+    flex-direction: column;
+    align-items: center;
   }
 }
 
