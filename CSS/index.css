@@ -188,7 +188,6 @@ h5 {
 h2 {
   font-size: 3.8rem;
   margin: 0 auto;
-  width: 98%;
 }
 h3 {
   font-size: 3.5rem;
@@ -284,8 +283,9 @@ End of Header/Nav
 CTA
 
 */
-.cta .cta-btn {
-  margin: 25px auto;
+.cta .cta-btn,
+.container-card .button {
+  margin: 0 auto 30px;
   padding: 14px 29px;
   border-radius: 4px;
   background-color: var(--cta-btn-color);
@@ -293,6 +293,10 @@ CTA
   font-size: 3rem;
   color: var(--font-color);
   font-weight: bold;
+}
+
+.cta .cta-btn {
+  margin: 30px auto 0;
 }
 .cta .cta-btn:hover {
   background-color: var(--link-color);
@@ -330,6 +334,35 @@ CTA
 }
 
 /*
+ About
+*/
+
+.container-cards {
+  width: 85%;
+  justify-content: center;
+  margin: 30px auto 0;
+}
+.row {
+  display: flex;
+  justify-content: space-between;
+}
+.container-card {
+  margin-top: 20px;
+}
+.container-card h2 {
+  text-align: center;
+}
+.container-card p {
+  display: flex;
+  justify-content: center;
+}
+.container-card .button:hover {
+  background-color: var(--link-color);
+  color: var(--second-bg-color);
+  transition: all 0.4s ease 0s;
+}
+
+/*
   footer
 */
 footer p {
@@ -352,7 +385,6 @@ footer p a:hover {
 Media Queries
 
 */
-
 @media (max-width: 1600px) {
   .contact p {
     padding-top: 15px;
@@ -368,14 +400,47 @@ Media Queries
   .contact img {
     margin-top: 0;
   }
+  .container-cards {
+    width: 98%;
+  }
+  .row {
+    width: 100%;
+  }
+  .card3 .text-dog {
+    font-size: 1.6rem;
+  }
+}
+
+@media (max-width: 1400px) {
+  .contact p {
+    padding-top: 15px;
+  }
+  #social-icons-hp {
+    margin-top: 0;
+    padding: 0;
+  }
+  .social-icons-hp a {
+    width: 0;
+    height: 100%;
+  }
+  .contact img {
+    margin-top: 0;
+  }
+  .container-cards {
+    width: 99%;
+  }
+}
+
+@media (max-width: 1365px) {
+  .row {
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 @media (min-width: 1024px) {
   .main-navigation {
     max-width: 1024px;
-  }
-  .container {
-    margin-top: 100px;
   }
 
   .navbar {
@@ -424,13 +489,12 @@ Media Queries
   .mission .contact {
     display: flex;
     justify-content: flex-end;
-    margin-top: 60px;
+    margin-top: 30px;
   }
   .cta .top-section {
     display: flex;
     justify-content: center;
     flex-flow: column;
-    align-items: center;
     width: 48%;
   }
 
@@ -527,8 +591,10 @@ Media Queries
   }
   .cta .cta-btn {
     width: 300px;
-
     font-size: 2rem;
+  }
+  h3 {
+    margin: 40px auto 20px;
   }
 }
 
@@ -553,6 +619,17 @@ Media Queries
 @media (max-width: 430px) {
   .main-navigation h1 {
     font-size: 4rem;
+  }
+  .container-cards {
+    width: 100%;
+  }
+  .row {
+    width: 100%;
+  }
+  .column .cards img {
+    display: block;
+    width: 96%;
+    margin: 0 auto;
   }
 }
 
